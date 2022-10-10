@@ -13,7 +13,7 @@ describe('[POST] /users', () => {
         email: 'john.doe@example.com',
       })
       .expect(201);
-    console.log(response.body);
+
     expect(response.body).toMatchObject({
       name: 'John Doe',
       email: 'john.doe@example.com',
